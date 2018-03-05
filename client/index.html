@@ -1,0 +1,120 @@
+<html ng-app="myApp">
+<head>
+	<title>Botez cu dichis</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Theme style  -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/produse.css">
+<link rel="stylesheet" href="css/stylea.css">
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Satisfy');
+		</style>
+</head>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large phonemenu w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">Botez cu dichis.</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+
+<body class="w3-content" style="max-width:1420px" >
+
+	<nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+	<div class="w3-container w3-display-container w3-padding-16">
+		<i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+		<h3 class="w3-wide"><b>Botez cu dichis.</b></h3>
+	</div>
+	<div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+		<a href="#preturi" class="w3-bar-item w3-button">Acasa</a>
+
+
+
+		<a onclick="myAccFuncBaieti()" href="javascript:void(0)" class="w3-button w3-block w3-left-align">
+			Baieti <i class="fa fa-caret-down"></i>
+		</a>
+		<div id="demoBaieti" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+			<a onclick="myAccFuncBaietiBotez()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"><i class="fa fa-caret-right w3-margin-right"></i>Botez
+		</a>
+	<div id="demoBaietiBotez" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+			<a onclick="w3_close()" href="#/baietibotezlumanari" class="w3-bar-item w3-button">Lumanari</a>
+			<a onclick="w3_close()" href="#/baietiboteztrusouri" class="w3-bar-item w3-button">Trusouri</a>
+			<a href="#/baietibotezcostume" class="w3-bar-item w3-button">Costume botez</a>
+		</div>
+		</div>
+
+		<a onclick="myAccFuncFete()" href="javascript:void(0)" class="w3-button w3-block w3-left-align">
+			Fete <i class="fa fa-caret-down"></i>
+		</a>
+		<div id="demoFete" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+			<a onclick="myAccFuncFeteBotez()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align"><i class="fa fa-caret-right w3-margin-right"></i>Botez
+		</a>
+	<div id="demoFeteBotez" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+			<a onclick="w3_close()" href="#/fetebotezlumanari" class="w3-bar-item w3-button">Lumanari</a>
+			<a onclick="w3_close()" href="#/feteboteztrusouri" class="w3-bar-item w3-button">Trusouri</a>
+			<a href="#/fetebotezrochite" class="w3-bar-item w3-button">Rochite botez</a>
+		</div>
+		</div>
+
+	 <a onclick="myAccFuncCadouri()" href="javascript:void(0)" class="w3-button w3-block  w3-left-align">
+			Cadouri <i class="fa fa-caret-down"></i>
+		</a>
+		<div id="demoCadouri" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+		<a onclick="w3_close()" href="#/cadouripernite" class="w3-button w3-block w3-white w3-left-align">Pernite</a>
+		<a onclick="w3_close()" href="#/cadourijucarii" class="w3-button w3-block w3-white w3-left-align">Jucarii</a>
+		<a onclick="w3_close()" href="#/cadouritricouri" class="w3-button w3-block w3-white w3-left-align">Tricouri</a>
+		</div>
+
+
+	 <a href="#" class="w3-bar-item w3-button">Portofoliu</a>
+	</div>
+	<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Scrie-ne</a>
+
+</nav>
+
+<!-- Contact Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">SCRIE-NE</h2>
+      <p>Adreseaza-ne o intrebare si vom raspunde in cel mai scurt timp posibil</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Nume"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="Numar de telefon"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="E-mail"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="Scrie mesaj"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Trimite</button>
+    </div>
+  </div>
+</div>
+
+
+
+<div id="main">
+
+	<!-- angular templating -->
+	<!-- this is where content will be injected -->
+<div ng-view></div>
+
+    </div><!-- /.container -->
+	<script src="/bower_components/jquery/dist/jquery.js"></script>
+	<script src="/bower_components/angular/angular.js"></script>
+	<script src="/bower_components/angular-route/angular-route.js"></script>
+	<script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script src="/app.js"></script>
+	<script src="/javascript/main.js"></script>
+	<script src="/controllers/books.js"></script>
+	<script src="/controllers/genres.js"></script>
+</body>
+
+</html>

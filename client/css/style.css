@@ -1,0 +1,137 @@
+/* =======================================================
+*    Claudiu Nedelcu edit 2017
+* 	Template Style
+*	Edit this section
+*
+* ======================================================= */
+
+.w3-sidebar a {font-family: 'Courgette', cursive;font-size: 18px;}
+.w3-wide {font-family: 'Courgette', cursive;}
+
+body,p,li,a{
+  font-family: 'Courgette', cursive;font-size: 18px;
+  color:black;
+}
+
+.w3-container > h2 {
+  font-family: 'Courgette', cursive;
+  color:black;
+}
+
+
+.produse{
+  margin-top: 50px;
+}
+
+/*produse aranjate mai bine in grid */
+.addproduse{
+  margin-left: 250px;
+}
+
+
+img{
+  width: 100%;
+  margin-top: 11px;
+}
+
+html{
+  background-color: #fdf4cd;
+}
+
+.w3-main{
+  background-color:  #fdf4cd;
+
+}
+
+.body{
+  background-color:  #f5f5f5;
+}
+
+.w3-content{
+  background-color:  #fdf4cd;
+}
+
+.w3-sidebar{
+  background-color:  #e7daa0;
+
+}
+
+.phonemenu{
+  background-color:  #e7daa0;
+}
+
+
+.panel-body {
+    padding: 15px;
+    background: #F5F5F5;
+}
+
+
+/*Carousel Fullscreen*/
+/** TIPS:
+1. The carousel shouldn't be in any other div, like for example div with class container.
+2. You can align image position in classes bg1, bg2, bg3 using css background-position.
+*/
+
+/* Carousel 100% Fullscreen */
+
+.carousel, .item, .active {
+height:100%;
+}
+.carousel-inner {
+height:100%;
+}
+.carousel {
+margin-bottom: 60px;
+}
+.carousel-caption {
+z-index: 10;
+}
+.carousel .item {
+background-color: #777;
+}
+.carousel .carousel-inner .bg {
+background-repeat:no-repeat;
+background-size:cover;
+}
+.carousel .carousel-inner .bg1 {
+background-image:url('https://scontent.fsbz1-2.fna.fbcdn.net/v/t1.0-9/26238854_541784136189372_5823851261671583328_n.jpg?oh=f5b38b47493a4ae2688e59767a3d5d7a&oe=5AFFCE20');
+background-position: center top;
+}
+.carousel .carousel-inner .bg2 {
+background-image:url('https://scontent.fsbz1-2.fna.fbcdn.net/v/t31.0-8/26850131_548594685508317_3404601488831273714_o.jpg?oh=38cc8e2fb2487e8da43b2c22d906e041&oe=5B036B2F');
+background-position: center center;
+}
+.carousel .carousel-inner .bg3 {
+background-image:url('https://scontent.fsbz1-2.fna.fbcdn.net/v/t31.0-8/27023821_549449248756194_6432729198727930245_o.jpg?oh=d7d4b59c442a758fd7adc60cd471c14c&oe=5B07A680');
+background-position: center bottom;
+}
+
+
+/*DETALIIPRODUSE*/
+label{
+  font-family: 'Courgette', cursive;font-size: 18px;
+}
+
+.form-control{
+  font-family: 'Courgette', cursive;font-size: 14px;
+}
+
+.configuration{
+  margin-left: -250px;
+}
+
+.comanda{
+  font-family: 'Courgette', cursive;font-size: 15px;
+  background-color:  #e7daa0;
+}
+
+.panel-body {
+    padding: 15px;
+    background-color: #fdf4cd;
+    border:none;
+}
+
+.test{
+    font-family: 'Courgette', cursive;font-size: 25px;
+}

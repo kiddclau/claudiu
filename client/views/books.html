@@ -1,0 +1,130 @@
+
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <!-- <header class="w3-container w3-xlarge">
+    <p align="center">Tricouri și trusouri brodate Happy</p>
+    <p class="w3-right">
+     <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>-->
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <!-- Carousel 100% Fullscreen -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2500">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item bg bg1 active">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item bg bg2">
+          <div class="container">
+          </div>
+        </div>
+        <div class="item bg bg3">
+          <div class="container">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /end Carousel 100% Fullscreen -->
+  </div>
+<br><br>
+  <div class="w3-container w3-text-grey" id="jeans">
+    <h2>V-ar putea interesa...</h2>
+  </div>
+
+  <!-- Product grid -->
+  <div class="w3-row">
+  <div ng-init="getFeatured()">
+    <div id="fh5co-work-section" class="fh5co-light-grey-section">
+
+      <div class="container">
+        <div class="row">
+          <div ng-repeat="book in books">
+          <div class="col-md-4 animate-box">
+            <a href="#/produse/detaliiproduscadourijucarii/{{book._id}}" class="item-grid text-center">
+              <div class="image" style="background-image: url({{book.image_url}})"></div>
+              <div class="v-align">
+                <div class="v-align-middle">
+                  <p align="center" class="nume">{{book.nume_produs}}</p><br>
+                  <p align="center" class="pret">Pret:{{book.pret}} Lei</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Intrebari despre un anumit produs?</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nume" name="Nume" required></p>
+		  <p><input class="w3-input w3-border" type="text" placeholder="Prenume" name="Prenume" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="E-mail" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subiect" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mesaj" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Despre</h4>
+        <a href="#"><p>Despre noi</p></a>
+        <a href="#"><p>Politica de retur</p></a>
+        <a href="#"><p>Termeni si conditii</p></a>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Magazin</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Botez cu dichis.</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> botezcudichis@mail.com</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">© Copyright 2018</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Contact Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">SCRIE-NE</h2>
+      <p>Adreseaza-ne o intrebare si vom raspunde in cel mai scurt timp posibil</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Nume"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="Numar de telefon"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="E-mail"></p>
+	  <p><input class="w3-input w3-border" type="text" placeholder="Scrie mesaj"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Trimite</button>
+    </div>
+  </div>
+</div>
