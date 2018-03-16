@@ -1,0 +1,60 @@
+  /* Products*/
+
+
+#fh5co-work-section .item-grid {
+  width: 100%;
+  float: left;
+  position: relative;
+  background: #0000000;
+  margin-bottom: 50px;
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.11);
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  top: 2px;
+}
+#fh5co-work-section .item-grid .image {
+  height: 390px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background-size: cover;
+  background-position: center center;
+}
+#fh5co-work-section .item-grid .v-align {
+  padding: 30px;
+}
+#fh5co-work-section .item-grid .v-align h3 {
+  font-weight: 700;
+  font-size: 20px;
+}
+#fh5co-work-section .item-grid .v-align h5 {
+  color: rgba(0, 0, 0, 0.3);
+}
+#fh5co-work-section .item-grid:hover, #fh5co-work-section .item-grid:focus {
+  text-decoration: none;
+  -webkit-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
+  -moz-box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 14px 25px -2px rgba(0, 0, 0, 0.14);
+  top: -2px;
+}
+
+
+.fh5co-light-grey-section {
+  background: #fdf4cd !important;
+  width:100%;
+}
+
+.panel-default{
+  width: 110%;
+}
+
+ #fh5co-work-section {
+  padding: 7em 0;
+}
+@media screen and (max-width: 768px) {
+  #fh5co-work-section{
+    padding: 3em 0;
+  }
+}
