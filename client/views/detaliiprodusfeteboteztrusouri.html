@@ -1,0 +1,75 @@
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+  </header>
+  
+<div class="panel panel-default" ng-init="getBook()">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{book.title}}</h3>
+  </div>
+  <div class="panel-body">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{book.image_url}}">
+      </div>
+      <div class="col-md-8">
+        </p>{{book.description}}</p>
+        <ul class="list-group">
+          <li class="list-group-item">Nume Produs: {{book.nume_produs}}</li>
+          <li class="list-group-item">Categorie: {{book.categorie}}</li>
+          <li class="list-group-item">Alte detalii: {{book.alte_detalii}}</li>
+          <li class="list-group-item">Pret: {{book.pret}}</li>
+          <li class="list-group-item">Marime: {{book.marime}}</li>
+        </ul>
+        <a target="_blank" href="{{book.buy_url}}" class="btn btn-primary">Buy on Amazon</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Configurare</h3>
+  </div>
+  <div class="panel-body addproduse">
+    <div class="row">
+      <div class="col-md-12">
+      <form ng-submit="updateBook()" ng-init="getBook()">
+        <div class="form-group">
+          <label>Nume Copil</label>
+          <input type="text" class="form-control" ng-model="book.nume_produs" placeholder="Title">
+        </div>
+        <div class="form-group">
+          <label>Data Botez</label>
+          <input type="text" class="form-control" ng-model="book.pret" placeholder="Pret">
+        </div>
+        <div class="form-group">
+          <label>Alte observatii</label>
+          <textarea type="text" class="form-control" ng-model="book.alte_detalii" placeholder="Alte detalii"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Marime</label>
+          <select ng-model="book.marime" class="form-control">
+            <option value="Suspense">XS</option>
+            <option value="Drama">S</option>
+            <option value="Romance">M</option>
+            <option value="NonFiction">L</option>
+            <option value="Other">XL</option>
+          </select>
+        </div>
+
+
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+
+</div>
